@@ -6,6 +6,6 @@
 
    - Screenshots/ – A folder containing all screenshots captured during the task.
 
-   - scan_results/ – A folder containing Nmap scan results in text format.
+   - scan_results – A file containing Nmap scan results.
 
 These files together provide a complete overview of the task, including the methodology, observations, and analysis.
