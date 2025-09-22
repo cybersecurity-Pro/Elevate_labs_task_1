@@ -51,8 +51,9 @@ The TCP SYN scan was performed on my own device (IP: `192.168.0.102`). The follo
 | 139   | open  | netbios-ssn   |
 | 445   | open  | microsoft-ds  |
 | 5357  | open  | wsdapi        |
-| 7070  | open  | realserver    |
 | 6646  | open  | mcafee        |
+| 7070  | open  | realserver    |
+
 
 **Observations:**
 - Ports **135, 139, 445** are related to **Windows file sharing and remote procedure calls**, which are commonly open on Windows devices.  
