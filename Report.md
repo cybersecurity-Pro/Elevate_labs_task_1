@@ -97,7 +97,7 @@ This allows us to clearly see the scan attempts sent to different ports.
 
 **Screenshot:**
 
-![Filter](./Screenshots/Filter)
+![Filter](./Screenshots/Filter.png)
 
 ## Observations
 
