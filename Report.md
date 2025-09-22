@@ -9,7 +9,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
 
 ---
 
-## Steps Performed / Methodology
+## Steps Performed / Methodology (Nmap Scan)
 
 1. **Install Nmap**  
    - On **Kali Linux**, Nmap comes pre-installed.  
@@ -63,7 +63,7 @@ The TCP SYN scan was performed on my own device (IP: `192.168.0.102`). The follo
 ---
 
 
-# Wireshark Analysis
+# Wireshark Analysis (Optional)
 
 For this part, I used Wireshark to capture and analyze the network traffic while running an Nmap scan.
 
