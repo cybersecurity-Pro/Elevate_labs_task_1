@@ -10,7 +10,7 @@ PORT STATE SERVICE
 445/tcp open microsoft-ds 
 5357/tcp open wsdapi 
 7070/tcp open realserver 
-8090/tcp open opsmessaging
+6646/tcp open mcafee
 
 
 ---
