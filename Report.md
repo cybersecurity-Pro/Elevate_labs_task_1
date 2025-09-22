@@ -174,4 +174,9 @@ This allows us to clearly see the scan attempts sent to different ports.
 
    - This aligns with how a SYN scan works: sending SYN packets without completing the full TCP handshake.
 
+---
+
+# Conclusion:
+Wireshark and Nmap are useful tools for network reconnaissance. Nmap helps identify active devices and open ports, while Wireshark allows monitoring and analyzing network traffic. Together, they provide insights into the network’s structure and potential security risks.
+
 
