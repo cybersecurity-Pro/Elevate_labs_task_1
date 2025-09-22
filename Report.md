@@ -27,7 +27,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
    - In the target field, I entered **my own IP address**, since scanning someone else’s device without permission is illegal.  
    - The TCP SYN scan (`-sS`) identifies **open ports** on the device in a stealthy manner.
      ```
-     nmap -sS <your ip>
+     nmap -sS <MY_IP>
      ```
 
 4. **Capture Results**  
@@ -43,7 +43,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
 
 ## Results & Analysis
 
-The TCP SYN scan was performed on my own device (IP: `my ip`). The following open ports were detected:
+The TCP SYN scan was performed on my own device (IP: `MY_IP`). The following open ports were detected:
 
 | Port  | State | Service       |
 |-------|-------|---------------|
@@ -157,7 +157,7 @@ The capture displayed multiple TCP, TLS, and DNS packets, including the SYN pack
 ## Filtering Packets
 To make the scan traffic easier to analyze, Wireshark supports display filters. For example, filtering for SYN packets from my device can be done using:
 ```
-tcp.flags.syn == 1 && ip.addr == <your_ip>
+tcp.flags.syn == 1 && ip.addr == <MY_IP>
 ```
 
 This allows us to clearly see the scan attempts sent to different ports.
