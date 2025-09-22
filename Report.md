@@ -95,17 +95,17 @@ Only 2 hosts were active in the scanned 256 IP range.
 
 1) 192.168.0.1 (Router/WAP)
 
-- SSH (22/tcp): Could allow unauthorized remote access if weak/default credentials are used.
+   - SSH (22/tcp): Could allow unauthorized remote access if weak/default credentials are used.
 
-- HTTP (80/tcp): Web interface exposed → risk if firmware is outdated or weak password is used.
+   - HTTP (80/tcp): Web interface exposed → risk if firmware is outdated or weak password is used.
 
-- UPnP (1900/tcp): Can be exploited by malware to open ports automatically.
+   - UPnP (1900/tcp): Can be exploited by malware to open ports automatically.
 
-- DNS (53/tcp): Usually low risk internally, but misconfigured DNS could cause problems.
+   - DNS (53/tcp): Usually low risk internally, but misconfigured DNS could cause problems.
 
 2) 192.168.0.101
 
-- All ports closed → minimal exposure, low risk.
+   - All ports closed → minimal exposure, low risk.
 
 **Screenshot:**
 
@@ -167,10 +167,10 @@ This allows us to clearly see the scan attempts sent to different ports.
 
 ## Observations
 
-Normal traffic (TLS, DNS) was mixed with Nmap packets in raw capture.
+   - Normal traffic (TLS, DNS) was mixed with Nmap packets in raw capture.
 
-Applying filters made it clear that Nmap was systematically sending SYN requests to multiple ports.
+   - Applying filters made it clear that Nmap was systematically sending SYN requests to multiple ports.
 
-This aligns with how a SYN scan works: sending SYN packets without completing the full TCP handshake.
+   - This aligns with how a SYN scan works: sending SYN packets without completing the full TCP handshake.
 
 
