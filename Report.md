@@ -27,7 +27,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
    - In the target field, I entered **my own IP address**, since scanning someone else’s device without permission is illegal.  
    - The TCP SYN scan (`-sS`) identifies **open ports** on the device in a stealthy manner.
      ```
-     nmap -sS 192.168.0.102
+     nmap -sS <your ip>
      ```
 
 4. **Capture Results**  
@@ -43,7 +43,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
 
 ## Results & Analysis
 
-The TCP SYN scan was performed on my own device (IP: `192.168.0.102`). The following open ports were detected:
+The TCP SYN scan was performed on my own device (IP: `my ip`). The following open ports were detected:
 
 | Port  | State | Service       |
 |-------|-------|---------------|
@@ -164,7 +164,7 @@ This allows us to clearly see the scan attempts sent to different ports.
 
 **Screenshot:**
 
-![Filter](./Screenshots/Filter.png)
+![Filter](./Screenshots/Filter_1.png)
 
 ## Observations
 
