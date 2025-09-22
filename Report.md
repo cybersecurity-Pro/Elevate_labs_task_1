@@ -52,11 +52,11 @@ The TCP SYN scan was performed on my own device (IP: `192.168.0.102`). The follo
 | 445   | open  | microsoft-ds  |
 | 5357  | open  | wsdapi        |
 | 7070  | open  | realserver    |
-| 8090  | open  | opsmessaging  |
+| 6646  | open  | mcafee        |
 
 **Observations:**
 - Ports **135, 139, 445** are related to **Windows file sharing and remote procedure calls**, which are commonly open on Windows devices.  
-- Ports **5357, 7070, 8090** are associated with **network services like WSD, RealServer, and OpsMessaging**.  
+- Ports **5357, 7070, 6646** are associated with **network services like WSD, RealServer, and McAfee**.  
 - Open ports can pose a **security risk** if services are misconfigured or vulnerable to attacks. Proper firewall configuration and service management help mitigate these risks.  
 
 
