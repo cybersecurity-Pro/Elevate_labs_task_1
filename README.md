@@ -1,4 +1,4 @@
-## This repository contains the documentation and results for the network scanning task. Apart from this README file, there are three main components:
+## This repository contains the documentation and results for the network scanning task(Task 1). Apart from this README file, there are three main components:
 
    - report.md – The main report file containing detailed task steps, walkthrough, and screenshots.
 
