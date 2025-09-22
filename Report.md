@@ -36,7 +36,7 @@ In this report, we focus on scanning a **home/local network** to identify open p
 
 **Screenshot:**
 
-![Namp_scan](./Screenshots/Nmap_scan)
+![Namp_scan](./Screenshots/Nmap_scan.png)
   
 ---
 
