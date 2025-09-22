@@ -62,6 +62,70 @@ The TCP SYN scan was performed on my own device (IP: `192.168.0.102`). The follo
 
 ---
 
+# TCP SYN scan on Local port ranges
+
+## 1️⃣ How I Ran the Scan
+
+### Command used:
+```
+nmap -sS 192.168.0.0/24
+```
+
+### Explanation:
+
+-sS → TCP SYN scan (half-open scan). It’s faster and stealthier than a full TCP connect scan.
+
+192.168.0.0/24 → scans all IPs in my local network (192.168.0.1 to 192.168.0.254).
+
+### Purpose: Identify active devices and their open TCP ports to check for potential security risks.
+
+## 2️⃣ Scan Results
+
+| IP Address    | Open Ports (Service)                                                      | Notes                                     |
+| ------------- | ------------------------------------------------------------------------- | ----------------------------------------- |
+| 192.168.0.1   | 22/tcp (ssh) <br> 53/tcp (domain) <br> 80/tcp (http) <br> 1900/tcp (upnp) | Likely router/WAP device.                 |
+| 192.168.0.101 | No open ports detected                                                    | Device is up but no exposed TCP services. |
+
+
+### Observation: Only 2 hosts were active in the scanned 256 IP range.
+
+## 3️⃣ Potential Security Risks
+
+1) 192.168.0.1 (Router/WAP)
+
+- SSH (22/tcp): Could allow unauthorized remote access if weak/default credentials are used.
+
+- HTTP (80/tcp): Web interface exposed → risk if firmware is outdated or weak password is used.
+
+- UPnP (1900/tcp): Can be exploited by malware to open ports automatically.
+
+- DNS (53/tcp): Usually low risk internally, but misconfigured DNS could cause problems.
+
+2) 192.168.0.101
+
+- All ports closed → minimal exposure, low risk.
+
+**Screenshot:**
+
+![ss](./Screenshots/ss.png)
+
+## 4️⃣ Conclusion
+
+1) The network has 2 active devices.
+
+2) Router/WAP has several open ports that could be exploited if not secured properly.
+
+3) Recommendations:
+
+   - Update router firmware.
+
+   - Use strong, unique passwords.
+
+   - Disable unnecessary services like UPnP if not required.
+
+
+---
+
 
 # Wireshark Analysis (Optional)
 
