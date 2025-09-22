@@ -33,6 +33,10 @@ In this report, we focus on scanning a **home/local network** to identify open p
 4. **Capture Results**  
    - Nmap displayed the **IP address and open ports**, which I noted down for analysis.  
    - A screenshot of the scan output is presented below
+
+**Screenshot:**
+
+![snamp_scan](./Screenshots/Nmap_scan)
   
 ---
 
