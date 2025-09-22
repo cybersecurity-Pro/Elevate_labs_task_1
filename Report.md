@@ -26,9 +26,9 @@ In this report, we focus on scanning a **home/local network** to identify open p
    - I used the **Nmap GUI** version on Windows. For Linux, Nmap CLI can be used.  
    - In the target field, I entered **my own IP address**, since scanning someone else’s device without permission is illegal.  
    - The TCP SYN scan (`-sS`) identifies **open ports** on the device in a stealthy manner.
-   ```
-   nmap -sS 192.168.0.102
-   ```
+     ```
+     nmap -sS 192.168.0.102
+     ```
 
 4. **Capture Results**  
    - Nmap displayed the **IP address and open ports**, which I noted down for analysis.  
