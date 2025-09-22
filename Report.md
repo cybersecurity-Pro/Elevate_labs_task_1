@@ -73,9 +73,9 @@ nmap -sS 192.168.0.0/24
 
 ### Explanation:
 
--sS → TCP SYN scan (half-open scan). It’s faster and stealthier than a full TCP connect scan.
+1) -sS → TCP SYN scan (half-open scan). It’s faster and stealthier than a full TCP connect scan.
 
-192.168.0.0/24 → scans all IPs in my local network (192.168.0.1 to 192.168.0.254).
+2) 192.168.0.0/24 → scans all IPs in my local network (192.168.0.1 to 192.168.0.254).
 
 ### Purpose: Identify active devices and their open TCP ports to check for potential security risks.
 
@@ -87,7 +87,9 @@ nmap -sS 192.168.0.0/24
 | 192.168.0.101 | No open ports detected                                                    | Device is up but no exposed TCP services. |
 
 
-### Observation: Only 2 hosts were active in the scanned 256 IP range.
+### Observation: 
+
+Only 2 hosts were active in the scanned 256 IP range.
 
 ## 3️⃣ Potential Security Risks
 
